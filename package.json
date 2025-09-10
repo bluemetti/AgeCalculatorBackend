@@ -1,0 +1,31 @@
+```json
+{
+  "name": "my-age-app", // Nome do projeto
+  "version": "0.0.1", // Versão do projeto
+  "private": true, // Indica que o projeto não será publicado no npm
+  "type": "module", // Usa módulos ES
+  "scripts": {
+    "start": "vite", // Inicia o servidor de desenvolvimento Vite
+    "dev": "vite", // Alias para iniciar o Vite
+    "build": "vite build", // Gera build de produção
+    "preview": "vite preview" // Visualiza build de produção
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.3.4", // Integração de validação com react-hook-form
+    "cors": "^2.8.5", // Middleware para CORS (usado em backend)
+    "express": "^5.1.0", // Framework backend (se necessário)
+    "react": "^18.3.1", // Biblioteca principal React
+    "react-dom": "^18.3.1", // Renderização React no DOM
+    "react-hook-form": "^7.50.0", // Gerenciamento de formulários React
+    "react-router-dom": "^7.0.1", // Roteamento para aplicações React
+    "zod": "^3.23.8" // Validação de dados
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.2", // Tipos TypeScript para React
+    "@types/react-dom": "^18.3.2", // Tipos TypeScript para React DOM
+    "@vitejs/plugin-react": "^4.3.2", // Plugin Vite para React
+    "typescript": "^5.4.5", // Compilador TypeScript
+    "vite": "^5.3.1" // Bundler e servidor de desenvolvimento
+  }
+}
+```

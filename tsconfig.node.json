@@ -1,0 +1,10 @@
+// Arquivo de configuração TypeScript para arquivos Node (ex: vite.config.ts)
+{
+  "compilerOptions": {
+    "composite": true, // Permite projetos dependentes (usado em monorepos)
+    "module": "ESNext", // Usa módulos ESNext
+    "moduleResolution": "Node", // Resolve módulos como Node.js
+    "allowSyntheticDefaultImports": true // Permite importação default sintética
+  },
+  "include": ["vite.config.ts"] // Inclui apenas o arquivo de configuração do Vite
+}

@@ -1,0 +1,156 @@
+/* Estilo global do body, fundo gradiente e fonte principal */
+body {
+  background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+  font-family: 'Poppins', Inter, sans-serif;
+  min-height: 100vh;
+}
+
+/* Container centraliza o conteúdo vertical e horizontalmente */
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  padding: 2rem;
+}
+
+/* Card principal, fundo branco, bordas arredondadas e sombra */
+.card {
+  background: #fff;
+  padding: 3rem 2.5rem 2.5rem 2.5rem;
+  border-radius: 2rem 2rem 8rem 2rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Inputs agrupados em linha, com espaçamento */
+.inputs {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+/* Grupo de input, coluna para label e campo */
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label dos inputs, estilo pequeno e espaçado */
+.input-group label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #716f6f;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+/* Estilo dos campos de input */
+.input-group input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #151515;
+  background: #f9f9f9;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+
+/* Input em foco, borda roxa */
+.input-group input:focus {
+  border-color: #854dff;
+}
+
+/* Input com erro, borda vermelha */
+.error-input {
+  border-color: #ef4444 !important;
+}
+
+/* Label com erro, texto vermelho */
+.error-label {
+  color: #ef4444;
+}
+
+/* Mensagem de erro, texto pequeno e itálico */
+.error-msg {
+  margin-top: 0.25rem;
+  color: #ef4444;
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+/* Container do botão de submit, alinhado à direita */
+.submit-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 0 2rem 0;
+}
+
+/* Botão de submit, circular, roxo, sombra e animação */
+.submit-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #854dff;
+  color: #fff;
+  border-radius: 50%;
+  padding: 1.5rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(133,77,255,0.15);
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Botão de submit em hover, fundo preto */
+.submit-btn:hover {
+  background: #151515;
+}
+
+/* Resultados, texto grande, negrito e itálico */
+.results {
+  margin-top: 2rem;
+  font-size: 3.5rem;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 1.1;
+  color: #151515;
+}
+
+/* Números dos resultados, roxo e destaque */
+.result-number {
+  color: #854dff;
+  margin-right: 0.5rem;
+  font-weight: 800;
+  font-style: italic;
+  transition: color 0.3s;
+}
+
+/* Divisória e botão em linha, centralizados */
+.divider-btn-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 2rem 0 2.5rem 0;
+}
+
+/* Estilo da divisória */
+.divider {
+  flex: 1;
+  border: none;
+  border-top: 1px solid #ececec;
+  height: 1px;
+  background: transparent;
+}

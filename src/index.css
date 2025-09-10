@@ -1,0 +1,6 @@
+/* Reset básico do CSS para remover margens e paddings padrão do navegador */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
