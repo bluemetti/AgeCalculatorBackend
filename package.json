@@ -6,7 +6,8 @@
   "scripts": {
     "start": "vite",
     "dev": "vite",
-    "build": "vite build",
+  "build": "node ./node_modules/vite/bin/vite.js build",
+  "postinstall": "node -e \"if (process.platform !== 'win32') { try { require('fs').chmodSync('./node_modules/.bin/vite', 0o755); } catch(e){} }\"",
     "preview": "vite preview"
   },
   "dependencies": {
