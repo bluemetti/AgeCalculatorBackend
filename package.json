@@ -11,8 +11,6 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
-    "cors": "^2.8.5",
-    "express": "^5.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.50.0",
@@ -25,9 +23,5 @@
     "@vitejs/plugin-react": "^4.3.2",
     "typescript": "^5.4.5",
     "vite": "^5.3.1"
-  }
-  ,
-  "engines": {
-    "node": ">=20.0.0"
   }
 }
