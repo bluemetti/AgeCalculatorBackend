@@ -61,6 +61,20 @@ body {
   .nav { gap: 0.5rem; flex-direction: column; }
 }
 
+/* Botão de voltar nas páginas */
+.back-btn {
+  background: transparent;
+  border: 1px solid #e6e6e6;
+  padding: 0.45rem 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #374151;
+  transition: background 0.15s, transform 0.12s;
+}
+
+.back-btn:hover { background: #f3f4f6; transform: translateY(-2px); }
+
 /* Inputs agrupados em linha, com espaçamento */
 .inputs {
   display: flex;
