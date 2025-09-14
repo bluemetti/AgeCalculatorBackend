@@ -43,3 +43,13 @@ Dicas de gravação
 	- `src/validation.ts` — schema zod (para reforçar que validação é reaproveitada).
 
 Arquivo salvo no repo e pronto para referência durante a gravação.
+
+Frases prontas (falas curtas para cada seção)
+
+- Intro (use 1 frase curta): "Olá — sou [Seu Nome], esse é o Age Calculator, feito com React + TypeScript."
+- Explicação rápida (1-2 frases): "Aqui temos validação com Zod e react-hook-form. O formulário é reutilizável e também suporta calcular tempo até um evento futuro." 
+- Pergunta / Resposta (linha pronta): "Para criar a página do evento eu adicionei uma rota e reaproveitei o `FormComponent` passando `mode='future'` — sem duplicar código." 
+- Demonstração (frase de transição): "Agora eu vou demonstrar: primeiro na página Birth, depois em Event." 
+- Encerramento (1 frase): "Obrigado — o link do repositório e o deploy estão na descrição."
+
+Use essas frases como base; fale naturalmente e adapte para o seu tom.

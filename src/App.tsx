@@ -5,6 +5,8 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { schema, FormValues } from "./validation";
 import "./App.css";
+import { NavLink } from "react-router-dom";
+import FormComponent from "./components/FormComponent";
 
 // Componente principal
 const App = () => {
@@ -75,86 +77,16 @@ const App = () => {
   // Renderização do componente
   return (
     <div className="container">
+      <nav className="nav">
+        <NavLink to="/" className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`} end>
+          Birth
+        </NavLink>
+        <NavLink to="/event" className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`}>
+          Event
+        </NavLink>
+      </nav>
       <div className="card">
-        {/* Título removido para seguir o design do desafio */}
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-          <div className="inputs">
-            {/* Campo Dia */}
-            <div className="input-group">
-              <label htmlFor="day" className={errors.day ? "error-label" : ""}>
-                DAY
-              </label>
-              <input
-                id="day"
-                type="number"
-                placeholder="DD"
-                {...register("day", { valueAsNumber: true })}
-                className={errors.day ? "error-input" : ""}
-                min={1}
-                max={31}
-              />
-              {errors.day && <p className="error-msg">{errors.day.message}</p>}
-            </div>
-            {/* Campo Mês */}
-            <div className="input-group">
-              <label htmlFor="month" className={errors.month ? "error-label" : ""}>
-                MONTH
-              </label>
-              <input
-                id="month"
-                type="number"
-                placeholder="MM"
-                {...register("month", { valueAsNumber: true })}
-                className={errors.month ? "error-input" : ""}
-                min={1}
-                max={12}
-              />
-              {errors.month && <p className="error-msg">{errors.month.message}</p>}
-            </div>
-            {/* Campo Ano */}
-            <div className="input-group">
-              <label htmlFor="year" className={errors.year ? "error-label" : ""}>
-                YEAR
-              </label>
-              <input
-                id="year"
-                type="number"
-                placeholder="YYYY"
-                {...register("year", { valueAsNumber: true })}
-                className={errors.year ? "error-input" : ""}
-                min={1900}
-                max={new Date().getFullYear()}
-              />
-              {errors.year && <p className="error-msg">{errors.year.message}</p>}
-            </div>
-          </div>
-
-          {/* Linha separadora e botão */}
-          <div className="divider-btn-row">
-            <hr className="divider" />
-            <button type="submit" className="submit-btn" aria-label="Calcular idade">
-              <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44" fill="none">
-                <g>
-                  <circle cx="23" cy="22" r="22" fill="#854dff" />
-                  <path d="M23 14v16M14 23l9 9 9-9" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </g>
-              </svg>
-            </button>
-          </div>
-        </form>
-
-        {/* Resultados destacados */}
-        <div className="results">
-          <p>
-            <span className="result-number">{age.years !== null ? age.years : "--"}</span> years
-          </p>
-          <p>
-            <span className="result-number">{age.months !== null ? age.months : "--"}</span> months
-          </p>
-          <p>
-            <span className="result-number">{age.days !== null ? age.days : "--"}</span> days
-          </p>
-        </div>
+        <FormComponent mode="birth" />
       </div>
     </div>
   );
