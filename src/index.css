@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Reset básico do CSS para remover margens e paddings padrão do navegador */
 body {
   margin: 0;
