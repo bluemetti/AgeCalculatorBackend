@@ -8,9 +8,11 @@ const tryRequire = (pkg) => {
 
 const tailwindPlugin = tryRequire('@tailwindcss/postcss') || tryRequire('tailwindcss');
 
+const autoprefixer = tryRequire('autoprefixer');
+
 module.exports = {
   plugins: [
     tailwindPlugin,
-    require('autoprefixer'),
+    autoprefixer,
   ].filter(Boolean),
 };
